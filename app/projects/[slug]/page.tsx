@@ -1,16 +1,23 @@
-"use client";
-
 import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { projects } from "@/data/projects";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ExternalLink, Code } from "lucide-react";
 import Link from "next/link";
-import { use } from "react";
 
-export default function ProjectCaseStudy({ params }: { params: Promise<{ slug: string }> }) {
-  const resolvedParams = use(params);
-  const project = projects.find((p) => p.slug === resolvedParams.slug);
+export function generateStaticParams() {
+  return projects.map((p) => ({
+    slug: p.slug,
+  }));
+}
+
+export default async function ProjectCaseStudy({
+  params,
+}: {
+  params: Promise<{ slug: string }>;
+}) {
+  const { slug } = await params;
+  const project = projects.find((p) => p.slug === slug);
 
   if (!project) {
     notFound();
