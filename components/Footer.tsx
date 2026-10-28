@@ -59,6 +59,11 @@ export function Footer() {
                   GitHub <ArrowUpRight className="w-4 h-4 opacity-50 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
                 </a>
               </li>
+              <li>
+                <a href={profile.facebook || "https://www.facebook.com/mohameddacar.mohumed"} target="_blank" rel="noopener noreferrer" className="text-secondary hover:text-accent-blue transition-colors flex items-center gap-1 group">
+                  Facebook <ArrowUpRight className="w-4 h-4 opacity-50 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+                </a>
+              </li>
             </ul>
           </div>
         </div>

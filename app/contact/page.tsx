@@ -4,7 +4,7 @@ import { Navbar } from "@/components/Navbar";
 import { Footer } from "@/components/Footer";
 import { ContactForm } from "@/components/ContactForm";
 import { profile } from "@/data/profile";
-import { Download, ArrowUpRight } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 import Image from "next/image";
 
 export default function Contact() {
@@ -75,9 +75,14 @@ export default function Contact() {
                     <span className="font-medium text-primary group-hover:text-accent-blue transition-colors">GitHub</span>
                     <ArrowUpRight className="w-5 h-5 text-secondary group-hover:text-accent-blue transition-colors" />
                   </a>
-                  <a href="/resume.pdf" target="_blank" className="flex items-center justify-between p-4 bg-primary rounded-xl hover:bg-accent-blue transition-colors group">
-                    <span className="font-medium text-white">Download CV</span>
-                    <Download className="w-5 h-5 text-white/70 group-hover:text-white transition-colors" />
+                  <a
+                    href={profile.facebook || "https://www.facebook.com/mohameddacar.mohumed"}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-between p-4 bg-white rounded-xl border border-border hover:border-[#1877F2] hover:shadow-sm transition-all group"
+                  >
+                    <span className="font-medium text-primary group-hover:text-[#1877F2] transition-colors">Facebook</span>
+                    <ArrowUpRight className="w-5 h-5 text-secondary group-hover:text-[#1877F2] transition-colors" />
                   </a>
                 </div>
               </div>
