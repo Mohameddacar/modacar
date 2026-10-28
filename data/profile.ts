@@ -11,7 +11,7 @@ export const profile = {
   shortBio:
     "I transform operational problems, data and emerging AI technologies into useful digital products—while making complex technology easier to understand.",
   fullBio:
-    "I am Mohamed Dacar, a Computer Science student, software developer and applied AI enthusiast based in Mogadishu. My journey combines university education, structured software training, internships, professional technology roles and independent product development. I learn continuously, but I measure progress through what I can build, explain and improve.",
+    "I am Mohamed Dacar, a Computer Science graduate (BSc in CS & IT), software developer and applied AI builder based in Mogadishu. My journey combines university education, structured software training, internships, professional technology roles and independent product development. I learn continuously, but I measure progress through what I can build, explain and improve.",
   principles: [
     "Build for a real user and problem.",
     "Make complex systems understandable.",

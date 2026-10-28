@@ -51,10 +51,20 @@ export function ExperienceTimeline() {
               {/* Dot Mobile */}
               <div className="md:hidden absolute top-6 -left-[3.4rem] w-4 h-4 rounded-full bg-white border-4 border-border group-hover:border-accent-blue transition-colors z-10" />
               
-              <div className="bg-white p-6 rounded-2xl border border-border shadow-sm hover:shadow-md transition-shadow group-hover:border-accent-blue/30 text-left md:text-right">
-                <span className="text-sm font-mono text-secondary mb-2 block">{item.period}</span>
+              <div className="bg-white p-6 rounded-2xl border border-border shadow-sm hover:shadow-md transition-all group-hover:border-accent-blue/40 text-left md:text-right">
+                <div className="flex items-center gap-2 mb-2 justify-start md:justify-end flex-wrap">
+                  {item.type && (
+                    <span className="text-xs font-mono font-medium text-accent-blue bg-accent-blue/10 px-2.5 py-0.5 rounded-full border border-accent-blue/20">
+                      {item.type}
+                    </span>
+                  )}
+                  <span className="text-xs font-mono text-secondary">{item.period}</span>
+                </div>
                 <h4 className="font-heading font-bold text-xl text-primary">{item.role}</h4>
-                <p className="text-secondary font-medium mt-1">{item.company}</p>
+                <p className="text-accent-blue font-medium mt-1 text-sm">{item.company}</p>
+                {item.description && (
+                  <p className="text-secondary text-sm mt-3 leading-relaxed">{item.description}</p>
+                )}
               </div>
             </motion.div>
           ))}
@@ -79,10 +89,18 @@ export function ExperienceTimeline() {
               {/* Dot Mobile */}
               <div className="md:hidden absolute top-6 -left-[3.4rem] w-4 h-4 rounded-full bg-white border-4 border-border group-hover:border-accent-purple transition-colors z-10" />
               
-              <div className="bg-white p-6 rounded-2xl border border-border shadow-sm hover:shadow-md transition-shadow group-hover:border-accent-purple/30">
-                <span className="text-sm font-mono text-secondary mb-2 block">{item.period}</span>
+              <div className="bg-white p-6 rounded-2xl border border-border shadow-sm hover:shadow-md transition-all group-hover:border-purple-300">
+                <div className="flex items-center gap-2 mb-2 flex-wrap">
+                  <span className="text-xs font-mono font-medium text-purple-700 bg-purple-50 px-2.5 py-0.5 rounded-full border border-purple-200">
+                    Education
+                  </span>
+                  <span className="text-xs font-mono text-secondary">{item.period}</span>
+                </div>
                 <h4 className="font-heading font-bold text-xl text-primary">{item.degree}</h4>
-                <p className="text-secondary font-medium mt-1">{item.institution}</p>
+                <p className="text-purple-700 font-medium mt-1 text-sm">{item.institution}</p>
+                {item.description && (
+                  <p className="text-secondary text-sm mt-3 leading-relaxed">{item.description}</p>
+                )}
               </div>
             </motion.div>
           ))}
