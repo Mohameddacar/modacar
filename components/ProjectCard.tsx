@@ -19,19 +19,19 @@ export function ProjectCard({ project, index }: { project: Project; index: numbe
       <div className="relative h-64 sm:h-72 w-full overflow-hidden bg-gray-100">
         <div className="absolute inset-0 z-10 bg-gradient-to-t from-primary/80 via-primary/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
         
-        {/* Placeholder if image isn't found/loaded yet, otherwise use Next Image */}
-        <div className="absolute inset-0 bg-accent-blue/5 flex items-center justify-center text-accent-blue font-serif text-2xl z-0">
-          {project.title} Image
-        </div>
-        
-        {/* Actual Image (Uncomment when images are ready)
-        <Image
-          src={project.image}
-          alt={project.title}
-          fill
-          className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
-        />
-        */}
+        {project.image ? (
+          <Image
+            src={project.image}
+            alt={project.title}
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            className="object-cover object-top transition-transform duration-500 group-hover:scale-[1.04]"
+          />
+        ) : (
+          <div className="absolute inset-0 bg-accent-blue/5 flex items-center justify-center text-accent-blue font-serif text-2xl z-0">
+            {project.title} Image
+          </div>
+        )}
 
         {/* Hover Action Buttons */}
         <div className="absolute bottom-6 left-6 right-6 z-20 flex items-center justify-between translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-300">

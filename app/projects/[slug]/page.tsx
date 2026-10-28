@@ -4,6 +4,7 @@ import { projects } from "@/data/projects";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ExternalLink, Code } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 
 export function generateStaticParams() {
   return projects.map((p) => ({
@@ -68,32 +69,89 @@ export default async function ProjectCaseStudy({
             </div>
           </div>
 
-          <div className="aspect-video w-full bg-gray-100 rounded-3xl overflow-hidden mb-16 relative border border-border">
-            <div className="absolute inset-0 flex items-center justify-center font-serif text-2xl text-gray-400">
-              {project.title} Cover Image
-            </div>
+          <div className="aspect-video w-full bg-gray-100 rounded-3xl overflow-hidden mb-16 relative border border-border shadow-sm">
+            {project.image ? (
+              <Image
+                src={project.image}
+                alt={project.title}
+                fill
+                priority
+                className="object-cover object-top"
+              />
+            ) : (
+              <div className="absolute inset-0 flex items-center justify-center font-serif text-2xl text-gray-400">
+                {project.title} Cover Image
+              </div>
+            )}
           </div>
 
           <article className="prose prose-lg prose-headings:font-heading prose-headings:text-primary prose-p:text-secondary max-w-none">
-            <h2 className="text-3xl font-bold mb-6">Project Context</h2>
-            <p className="mb-8">Detailed case study content will go here. This includes the problem space, intended users, and constraints.</p>
+            <h2 className="text-3xl font-bold mb-6">Overview & Problem Statement</h2>
+            <p className="mb-4 text-xl font-medium text-primary leading-relaxed">
+              {project.overview || project.description}
+            </p>
+            <p className="mb-8">
+              {project.problem || "Detailed case study content analyzing the core operational challenge, target audience, and business context."}
+            </p>
 
             <h2 className="text-3xl font-bold mb-6">Solution & Architecture</h2>
-            <p className="mb-8">Explanation of the product workflow, main features, and the technology choices made.</p>
+            <p className="mb-8">
+              {project.solution || "Explanation of the product workflow, technical implementation, and system architecture."}
+            </p>
+
+            {project.features && project.features.length > 0 && (
+              <div className="mb-10">
+                <h3 className="text-2xl font-bold mb-4">Key Capabilities & Features</h3>
+                <ul className="space-y-2.5">
+                  {project.features.map((feat, idx) => (
+                    <li key={idx} className="text-secondary flex items-start gap-2">
+                      <span className="text-accent-blue font-bold">✓</span>
+                      <span>{feat}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            )}
             
-            <div className="bg-gray-50 p-8 rounded-2xl border border-border mb-8">
-              <h3 className="text-xl font-bold mb-4 mt-0">Technology Stack</h3>
+            <div className="bg-gray-50 p-8 rounded-2xl border border-border mb-10 not-prose">
+              <h3 className="text-xl font-bold mb-4 mt-0 text-primary">Technology Stack</h3>
               <div className="flex flex-wrap gap-2">
                 {project.stack.map((tech) => (
-                  <span key={tech} className="text-sm font-mono text-primary px-3 py-1.5 rounded-md border border-border bg-white">
+                  <span key={tech} className="text-sm font-mono text-primary px-3 py-1.5 rounded-md border border-border bg-white shadow-xs">
                     {tech}
                   </span>
                 ))}
               </div>
             </div>
 
-            <h2 className="text-3xl font-bold mb-6">Outcomes & Lessons Learned</h2>
-            <p className="mb-8">The final status of the project and what was learned during the implementation.</p>
+            <h2 className="text-3xl font-bold mb-6">Impact & Key Outcomes</h2>
+            {project.outcomes && project.outcomes.length > 0 ? (
+              <ul className="space-y-3 mb-8">
+                {project.outcomes.map((outcome, idx) => (
+                  <li key={idx} className="text-secondary flex items-start gap-2">
+                    <span className="text-success font-bold">→</span>
+                    <span>{outcome}</span>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p className="mb-8">The final status of the project and key engineering metrics achieved.</p>
+            )}
+
+            {project.liveUrl && (
+              <div className="pt-6 border-t border-border flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4 not-prose">
+                <span className="text-secondary text-sm font-medium">Ready to experience the live platform?</span>
+                <a
+                  href={project.liveUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-6 py-3 bg-primary text-white rounded-full font-medium hover:bg-accent-blue transition-colors inline-flex items-center gap-2 text-sm shadow-sm"
+                >
+                  Visit Live Site ({project.title})
+                  <ExternalLink className="w-4 h-4" />
+                </a>
+              </div>
+            )}
           </article>
         </div>
       </main>

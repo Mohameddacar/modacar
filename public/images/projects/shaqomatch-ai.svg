@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sm-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#090d16"/>
+      <stop offset="60%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#1e1b4b"/>
+    </linearGradient>
+    <linearGradient id="accent-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6366f1"/>
+      <stop offset="100%" stop-color="#a855f7"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#sm-bg)"/>
+
+  <!-- Subtle circles in background -->
+  <circle cx="950" cy="330" r="220" fill="#6366f1" fill-opacity="0.08"/>
+  <circle cx="950" cy="330" r="140" fill="#a855f7" fill-opacity="0.08"/>
+
+  <!-- Left Content -->
+  <g transform="translate(140, 110)">
+    <!-- Badge -->
+    <rect width="210" height="38" rx="19" fill="#6366f1" fill-opacity="0.15" stroke="#6366f1" stroke-width="1.5"/>
+    <circle cx="20" cy="19" r="5" fill="#818cf8"/>
+    <text x="35" y="24" fill="#c7d2fe" font-family="system-ui, sans-serif" font-size="14" font-weight="600" letter-spacing="1">LOCAL AI &amp; NLP</text>
+
+    <!-- Main Title -->
+    <text x="0" y="90" fill="#ffffff" font-family="system-ui, sans-serif" font-size="44" font-weight="800">ShaqoMatch AI</text>
+    <text x="0" y="130" fill="#94a3b8" font-family="system-ui, sans-serif" font-size="20">Privacy-First Local Résumé Intelligence</text>
+
+    <!-- Specs List -->
+    <g transform="translate(0, 250)">
+      <rect width="260" height="120" rx="16" fill="#1e293b" fill-opacity="0.8" stroke="#334155"/>
+      <text x="24" y="42" fill="#64748b" font-family="system-ui, sans-serif" font-size="14">AI INFERENCE</text>
+      <text x="24" y="80" fill="#ffffff" font-family="system-ui, sans-serif" font-size="26" font-weight="700">Ollama Local</text>
+      <text x="24" y="104" fill="#a855f7" font-family="system-ui, sans-serif" font-size="13">Zero Data Leakage</text>
+
+      <rect x="290" width="260" height="120" rx="16" fill="#1e293b" fill-opacity="0.8" stroke="#334155"/>
+      <text x="314" y="42" fill="#64748b" font-family="system-ui, sans-serif" font-size="14">MATCH ENGINE</text>
+      <text x="314" y="80" fill="#ffffff" font-family="system-ui, sans-serif" font-size="26" font-weight="700">Semantic Fit</text>
+      <text x="314" y="104" fill="#38bdf8" font-family="system-ui, sans-serif" font-size="13">Cosine Vector Distance</text>
+
+      <rect x="580" width="260" height="120" rx="16" fill="#1e293b" fill-opacity="0.8" stroke="#334155"/>
+      <text x="604" y="42" fill="#64748b" font-family="system-ui, sans-serif" font-size="14">CANDIDATE SCORE</text>
+      <text x="604" y="80" fill="#ffffff" font-family="system-ui, sans-serif" font-size="26" font-weight="700">94% Match</text>
+      <text x="604" y="104" fill="#10b981" font-family="system-ui, sans-serif" font-size="13">Skills &amp; Experience Verified</text>
+    </g>
+  </g>
+</svg>
