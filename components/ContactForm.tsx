@@ -20,7 +20,7 @@ export function ContactForm() {
   return (
     <div className="bg-white p-8 md:p-12 rounded-3xl border border-border shadow-sm">
       <h2 className="font-heading font-bold text-3xl text-primary mb-2">Send a Message</h2>
-      <p className="text-secondary mb-8">I'm currently available for new opportunities and collaborations.</p>
+      <p className="text-secondary mb-8">I'm currently ready to freelance and open to new projects and collaborations.</p>
 
       {status === "success" ? (
         <div className="bg-success/10 border border-success/20 text-success p-6 rounded-2xl flex flex-col items-center justify-center text-center">

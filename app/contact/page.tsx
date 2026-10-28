@@ -45,14 +45,28 @@ export default function Contact() {
                   
                   <div className="flex items-center gap-2 text-sm font-medium bg-success/10 text-success px-4 py-2 rounded-full border border-success/20 w-fit mx-auto md:mx-0">
                     <div className="w-2 h-2 rounded-full bg-success animate-pulse" />
-                    Available for work
+                    Ready To Freelance
                   </div>
                 </div>
               </div>
 
               <div className="space-y-6">
-                <h3 className="font-heading font-bold text-xl text-primary border-b border-border pb-4">Social & CV</h3>
+                <h3 className="font-heading font-bold text-xl text-primary border-b border-border pb-4">Social & Quick Contact</h3>
                 <div className="flex flex-col gap-4">
+                  <a
+                    href="https://wa.me/252617791483"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center justify-between p-4 bg-emerald-500/10 border border-emerald-500/20 rounded-xl hover:bg-emerald-500/20 transition-all group"
+                  >
+                    <div className="flex items-center gap-2">
+                      <span className="font-medium text-emerald-800">WhatsApp (Quick Contact)</span>
+                    </div>
+                    <span className="text-sm font-mono text-emerald-700 flex items-center gap-1">
+                      +252 61 779 1483
+                      <ArrowUpRight className="w-4 h-4" />
+                    </span>
+                  </a>
                   <a href={profile.linkedin} target="_blank" rel="noopener noreferrer" className="flex items-center justify-between p-4 bg-white rounded-xl border border-border hover:border-accent-blue hover:shadow-sm transition-all group">
                     <span className="font-medium text-primary group-hover:text-accent-blue transition-colors">LinkedIn</span>
                     <ArrowUpRight className="w-5 h-5 text-secondary group-hover:text-accent-blue transition-colors" />

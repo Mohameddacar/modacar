@@ -3,6 +3,8 @@ export const profile = {
   role: "Software Engineer & Applied AI Builder",
   location: "Mogadishu, Somalia",
   email: "mohameddacarmohumed@gmail.com",
+  phone: "+252617791483",
+  whatsapp: "https://wa.me/252617791483",
   github: "https://github.com/Mohameddacar",
   linkedin: "https://www.linkedin.com/in/mohamed-dacar-48987b190/",
   shortBio:

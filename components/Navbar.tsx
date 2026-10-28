@@ -21,6 +21,7 @@ export function Navbar() {
     { href: "/about", label: "About" },
     { href: "/projects", label: "Projects" },
     { href: "/experience", label: "Experience" },
+    { href: "/courses", label: "Courses" },
     { href: "/contact", label: "Contact" },
   ];
 
@@ -83,14 +84,15 @@ export function Navbar() {
             <div className="flex items-center gap-4">
               <div className="hidden xl:flex items-center gap-2 text-xs font-medium bg-success/10 text-success px-3 py-1.5 rounded-full border border-success/20">
                 <div className="w-2 h-2 rounded-full bg-success animate-pulse" />
-                Available for Work
+                Ready To Freelance
               </div>
               <a
-                href="/resume.pdf"
+                href={profile.whatsapp || "https://wa.me/252617791483"}
                 target="_blank"
-                className="hidden md:flex items-center justify-center px-5 py-2 text-sm font-medium text-white bg-primary rounded-full hover:bg-accent-blue transition-colors shadow-sm"
+                rel="noopener noreferrer"
+                className="hidden md:flex items-center justify-center px-5 py-2 text-sm font-medium text-white bg-primary rounded-full hover:bg-emerald-600 transition-colors shadow-sm"
               >
-                Download CV
+                Quick Contact
               </a>
               <button
                 className="lg:hidden p-2 text-primary"
@@ -145,10 +147,12 @@ export function Navbar() {
           </div>
           <div className="mt-auto p-6 pb-12">
             <a
-              href="/resume.pdf"
-              className="block w-full text-center py-4 text-white bg-primary rounded-full font-medium"
+              href={profile.whatsapp || "https://wa.me/252617791483"}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full text-center py-4 text-white bg-primary rounded-full font-medium hover:bg-emerald-600 transition-colors"
             >
-              Download CV
+              Quick Contact
             </a>
           </div>
         </div>
