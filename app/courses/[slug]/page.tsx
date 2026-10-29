@@ -126,12 +126,12 @@ export default async function CourseDetailPage({
             </div>
 
             {/* Generated Design Banner */}
-            <div className="relative aspect-video rounded-3xl overflow-hidden border border-border shadow-lg mb-12">
+            <div className="relative aspect-video rounded-3xl overflow-hidden border border-border shadow-lg mb-12 bg-gray-950">
               <Image
                 src={course.image}
                 alt={course.title}
                 fill
-                className="object-cover"
+                className="object-cover object-top"
                 priority
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent flex flex-col justify-end p-6 sm:p-10">
@@ -413,12 +413,12 @@ export default async function CourseDetailPage({
             {/* Right Sticky Enrollment Card (4 cols) */}
             <div className="lg:col-span-4 lg:sticky lg:top-28">
               <div className="bg-white rounded-3xl border border-border p-6 sm:p-8 shadow-lg space-y-6">
-                <div className="relative aspect-video rounded-2xl overflow-hidden border border-border shadow-sm">
+                <div className="relative aspect-video rounded-2xl overflow-hidden border border-border shadow-sm bg-gray-950">
                   <Image
                     src={course.image}
                     alt={course.title}
                     fill
-                    className="object-cover"
+                    className="object-cover object-top"
                     priority
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent flex items-end p-4">

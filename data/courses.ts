@@ -372,7 +372,7 @@ export const courses: Course[] = [
     language: "Somali (Af-Soomaali)",
     languageNote: "1-on-1 coaching delivered directly in Somali (Af-Soomaali toos ah)",
     featured: true,
-    image: "/images/mohamed-dacar-suit.jpg",
+    image: "/images/mentorship-course-banner.jpg",
     instructor: {
       name: "Mohamed Dacar",
       role: "Software Engineer & Applied AI Builder",

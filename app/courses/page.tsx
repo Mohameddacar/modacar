@@ -245,13 +245,13 @@ export default function CoursesPage() {
                     {/* Course Banner or Thumbnail */}
                     <Link
                       href={`/courses/${course.id}`}
-                      className="block relative aspect-video rounded-2xl overflow-hidden mb-6 border border-border/70"
+                      className="block relative aspect-video rounded-2xl overflow-hidden mb-6 border border-border/70 bg-gray-950"
                     >
                       <Image
                         src={course.image}
                         alt={course.title}
                         fill
-                        className="object-cover group-hover:scale-105 transition-transform duration-300"
+                        className="object-cover object-top group-hover:scale-105 transition-transform duration-300"
                       />
                       <div className="absolute top-3 left-3 flex flex-wrap gap-2">
                         <span className="px-3 py-1 rounded-full text-xs font-semibold bg-white/90 text-primary backdrop-blur-sm border border-white/50 shadow-sm">
