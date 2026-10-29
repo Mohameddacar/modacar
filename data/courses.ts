@@ -62,7 +62,7 @@ export const courses: Course[] = [
     level: "Beginner Friendly",
     duration: "4 Weeks (Based on Effort)",
     durationNote: "Ku xiran diyaargarowgaaga iyo dadaalkaaga (Self-paced, not time-restricted)",
-    format: "Video Lessons + Hands-on Projects + 1-on-1 WhatsApp Support",
+    format: "Video Lessons + Hands-on Projects + 1-on-1 Direct Support",
     status: "Enrollment Open",
     language: "Somali (Af-Soomaali)",
     languageNote: "Casharrada oo dhan waa Af-Soomaali (100% Somali voiceover & explanations)",
@@ -254,7 +254,7 @@ export const courses: Course[] = [
       "Step-by-Step High-Definition Video Modules",
       "Complete Source Code & Project Starter Repositories",
       "Vibe Coding Prompt Templates & Cheatsheets",
-      "1-on-1 Direct WhatsApp Support & Code Debugging (+252 61 779 1483)",
+      "1-on-1 Direct Support & Code Debugging (+252 61 429 3433)",
       "Official Certificate of Course Completion",
       "Lifetime Access to Course Materials & Future Updates",
     ],
@@ -286,7 +286,7 @@ export const courses: Course[] = [
     fullDescription: [
       "This comprehensive program is currently in active preparation by Mohamed Dacar to help students and professionals master data analytics and workflow automation using the industry's top three tools: Python, Excel, and Power BI.",
       "You will learn how to turn raw spreadsheets and business exports into automated reports, clean messy datasets with Python, build complex Excel models, and design high-impact Power BI executive dashboards.",
-      "Muhiim: Koorsadani hadda waxay ku jirtaa diyaarinta casharrada iyo duubista muuqaallada (In Active Preparation). Iska diiwaangeli liiska hore ee WhatsApp-ka si aad u hesho qiimo dhimis gaar ah iyo ogeysiin toos ah marka ay furanto.",
+      "Muhiim: Koorsadani hadda waxay ku jirtaa diyaarinta casharrada iyo duubista muuqaallada (In Active Preparation). Iska diiwaangeli liiska hore si aad u hesho qiimo dhimis gaar ah iyo ogeysiin toos ah marka ay furanto.",
     ],
     workflowSteps: [
       { step: "01", label: "Advanced Excel", description: "Mastering complex formulas, pivot tables, data modeling, and automated spreadsheet workflows" },
@@ -367,7 +367,7 @@ export const courses: Course[] = [
     level: "All Levels",
     duration: "Flexible (Ku xiran Baahidaada)",
     durationNote: "Waqti go'an kuma xirna — tailored to your individual goals and pace",
-    format: "Private 1-on-1 Video Sessions + Code Audits + Daily WhatsApp Access",
+    format: "Private 1-on-1 Video Sessions + Code Audits + Priority Daily Access",
     status: "Enrollment Open",
     language: "Somali (Af-Soomaali)",
     languageNote: "1-on-1 coaching delivered directly in Somali (Af-Soomaali toos ah)",
@@ -400,7 +400,7 @@ export const courses: Course[] = [
       { name: "Applied AI & Agent Tooling", category: "AI Workflows", badge: "5x Speed" },
       { name: "Productivity & Focus Systems", category: "Habits", badge: "Deep Work" },
       { name: "Freelance Client Playbook", category: "Monetization", badge: "High-Income" },
-      { name: "Priority WhatsApp Access", category: "Support", badge: "Daily Support" },
+      { name: "Priority Direct Access", category: "Support", badge: "Daily Support" },
     ],
     realWorldProjects: [
       {
@@ -479,7 +479,7 @@ export const courses: Course[] = [
       "Private 1-on-1 Video Consultation & Strategy Calls",
       "Line-by-line GitHub Code Reviews & Audits",
       "Custom Tailored Execution Roadmap",
-      "Priority Daily WhatsApp Access (+252 61 779 1483)",
+      "Priority Daily Direct Access (+252 61 429 3433)",
       "Vibe Coding Prompt Templates & Freelance Proposals",
     ],
     whatsappMessage:

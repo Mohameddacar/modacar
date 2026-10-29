@@ -87,7 +87,7 @@ export function Navbar() {
                 Ready To Freelance
               </div>
               <a
-                href={profile.whatsapp || "https://wa.me/252617791483"}
+                href={profile.whatsapp || "https://wa.me/252614293433"}
                 target="_blank"
                 rel="noopener noreferrer"
                 className="hidden md:flex items-center justify-center px-5 py-2 text-sm font-medium text-white bg-primary rounded-full hover:bg-emerald-600 transition-colors shadow-sm"
@@ -147,7 +147,7 @@ export function Navbar() {
           </div>
           <div className="mt-auto p-6 pb-12">
             <a
-              href={profile.whatsapp || "https://wa.me/252617791483"}
+              href={profile.whatsapp || "https://wa.me/252614293433"}
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full text-center py-4 text-white bg-primary rounded-full font-medium hover:bg-emerald-600 transition-colors"

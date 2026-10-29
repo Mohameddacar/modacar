@@ -40,8 +40,8 @@ export function Footer() {
             <h3 className="font-heading font-bold text-primary mb-6">Connect</h3>
             <ul className="flex flex-col gap-4">
               <li>
-                <a href="https://wa.me/252617791483" target="_blank" rel="noopener noreferrer" className="text-secondary hover:text-accent-blue transition-colors flex items-center gap-1 group">
-                  WhatsApp (+252 61 779 1483) <ArrowUpRight className="w-4 h-4 opacity-50 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
+                <a href={profile.whatsapp || "https://wa.me/252614293433"} target="_blank" rel="noopener noreferrer" className="text-secondary hover:text-accent-blue transition-colors flex items-center gap-1 group">
+                  Direct Chat (+252 61 429 3433) <ArrowUpRight className="w-4 h-4 opacity-50 group-hover:opacity-100 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-all" />
                 </a>
               </li>
               <li>

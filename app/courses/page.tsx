@@ -40,7 +40,7 @@ export default function CoursesPage() {
       ? courses
       : courses.filter((c) => c.category === selectedCategory);
 
-  const featuredWhatsappUrl = `https://wa.me/252617791483?text=${encodeURIComponent(
+  const featuredWhatsappUrl = `https://wa.me/252614293433?text=${encodeURIComponent(
     featuredCourse.whatsappMessage
   )}`;
 
@@ -107,7 +107,7 @@ export default function CoursesPage() {
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent flex flex-col justify-end p-6">
                     <span className="inline-flex items-center gap-2 text-xs font-mono text-white/95 bg-black/70 px-3 py-1.5 rounded-full backdrop-blur-md w-fit mb-2 border border-white/20">
                       <Video className="w-3.5 h-3.5 text-emerald-400" />
-                      100% Af-Soomaali | Casharro Muuqaal ah + Project Code + WhatsApp Mentorship
+                      100% Af-Soomaali | Casharro Muuqaal ah + Project Code + Direct Mentorship
                     </span>
                     <h3 className="text-white text-xl sm:text-2xl font-heading font-bold">
                       {featuredCourse.title}
@@ -193,7 +193,7 @@ export default function CoursesPage() {
                     className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-emerald-600 hover:bg-emerald-700 text-white rounded-full font-semibold text-sm transition-colors shadow-sm text-center"
                   >
                     <MessageCircle className="w-4 h-4" />
-                    <span>Enroll via WhatsApp</span>
+                    <span>Enroll Now</span>
                   </a>
                 </div>
               </div>
@@ -232,7 +232,7 @@ export default function CoursesPage() {
           {/* Courses Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-20">
             {filteredCourses.map((course) => {
-              const whatsappUrl = `https://wa.me/252617791483?text=${encodeURIComponent(
+              const whatsappUrl = `https://wa.me/252614293433?text=${encodeURIComponent(
                 course.whatsappMessage
               )}`;
 
@@ -324,7 +324,7 @@ export default function CoursesPage() {
                       }`}
                     >
                       <MessageCircle className="w-4 h-4" />
-                      {course.status === "Coming Soon" ? "Ku Biir Waitlist-ka" : "Dalbo WhatsApp"}
+                      {course.status === "Coming Soon" ? "Ku Biir Waitlist-ka" : "Enroll Now"}
                     </a>
                   </div>
                 </div>
@@ -345,11 +345,11 @@ export default function CoursesPage() {
                 Want a Tailored Workshop or 1-on-1 Engineering Support?
               </h3>
               <p className="text-gray-300 text-base sm:text-lg leading-relaxed">
-                Whether you need dedicated team training on modern web development, applied AI automation for your organization, or private video coaching, connect directly with Mohamed Dacar on WhatsApp to get started.
+                Whether you need dedicated team training on modern web development, applied AI automation for your organization, or private video coaching, connect directly with Mohamed Dacar to get started.
               </p>
               <div className="flex flex-wrap items-center gap-4 pt-2">
                 <a
-                  href={`https://wa.me/252617791483?text=${encodeURIComponent(
+                  href={`https://wa.me/252614293433?text=${encodeURIComponent(
                     "Hi Mohamed, I would like to inquire about your courses or customized software training!"
                   )}`}
                   target="_blank"
@@ -357,7 +357,7 @@ export default function CoursesPage() {
                   className="inline-flex items-center gap-2.5 px-8 py-4 bg-emerald-500 hover:bg-emerald-600 text-white rounded-full font-semibold transition-all shadow-lg text-sm sm:text-base"
                 >
                   <MessageCircle className="w-5 h-5" />
-                  Chat on WhatsApp (+252 61 779 1483)
+                  Direct Chat (+252 61 429 3433)
                 </a>
                 <a
                   href={`mailto:${profile.email}`}

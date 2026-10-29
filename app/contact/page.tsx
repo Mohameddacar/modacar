@@ -54,16 +54,16 @@ export default function Contact() {
                 <h3 className="font-heading font-bold text-xl text-primary border-b border-border pb-4">Social & Quick Contact</h3>
                 <div className="flex flex-col gap-4">
                   <a
-                    href="https://wa.me/252617791483"
+                    href={profile.whatsapp || "https://wa.me/252614293433"}
                     target="_blank"
                     rel="noopener noreferrer"
                     className="flex items-center justify-between p-4 bg-emerald-500/10 border border-emerald-500/20 rounded-xl hover:bg-emerald-500/20 transition-all group"
                   >
                     <div className="flex items-center gap-2">
-                      <span className="font-medium text-emerald-800">WhatsApp (Quick Contact)</span>
+                      <span className="font-medium text-emerald-800">Direct Chat & Call</span>
                     </div>
                     <span className="text-sm font-mono text-emerald-700 flex items-center gap-1">
-                      +252 61 779 1483
+                      +252 61 429 3433
                       <ArrowUpRight className="w-4 h-4" />
                     </span>
                   </a>

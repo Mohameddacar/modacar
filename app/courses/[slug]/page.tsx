@@ -44,7 +44,7 @@ export default async function CourseDetailPage({
     notFound();
   }
 
-  const whatsappEnrollUrl = `https://wa.me/252617791483?text=${encodeURIComponent(
+  const whatsappEnrollUrl = `https://wa.me/252614293433?text=${encodeURIComponent(
     course.whatsappMessage
   )}`;
 
@@ -86,7 +86,7 @@ export default async function CourseDetailPage({
                     Course In Active Development
                   </h3>
                   <p className="text-amber-900 text-sm mt-1 leading-relaxed">
-                    Mohamed Dacar is currently structuring the syllabus, recording video lessons in Somali, and packaging starter templates. Join the WhatsApp waitlist to get notified first!
+                    Mohamed Dacar is currently structuring the syllabus, recording video lessons in Somali, and packaging starter templates. Join the early waitlist to get notified first!
                   </p>
                 </div>
               </div>
@@ -222,7 +222,7 @@ export default async function CourseDetailPage({
                     Be First in Line When Video Lectures Launch
                   </h3>
                   <p className="text-emerald-100 text-sm leading-relaxed mb-6">
-                    Because this course is in preparation, we are taking early waitlist members on WhatsApp. Waitlist members will receive:
+                    Because this course is in preparation, we are taking early waitlist members. Waitlist members will receive:
                   </p>
                   <ul className="space-y-2 text-xs sm:text-sm text-emerald-50 mb-6">
                     <li className="flex items-center gap-2">
@@ -248,7 +248,7 @@ export default async function CourseDetailPage({
                     className="w-full inline-flex items-center justify-center gap-2.5 px-6 py-4 bg-white text-emerald-900 font-bold rounded-full hover:bg-emerald-50 transition-colors shadow-md text-sm sm:text-base text-center"
                   >
                     <MessageCircle className="w-5 h-5 text-emerald-600 shrink-0" />
-                    <span>Join Waitlist via WhatsApp (+252 61 779 1483)</span>
+                    <span>Join Waitlist (+252 61 429 3433)</span>
                   </a>
                   <p className="text-center text-xs text-emerald-200 mt-2 font-mono">
                     Ku biir liiska hore si aad noogu soo biirto
@@ -383,7 +383,7 @@ export default async function CourseDetailPage({
                     <span>Videos + Mentorship</span>
                   </div>
                   <span className="text-[11px] text-secondary block mt-1">
-                    Taageero toos ah oo WhatsApp ah
+                    Taageero toos ah oo 1-on-1 ah
                   </span>
                 </div>
               </div>
@@ -433,7 +433,7 @@ export default async function CourseDetailPage({
                     Enroll & Access Course Videos
                   </h4>
                   <p className="text-xs sm:text-sm text-secondary leading-relaxed">
-                    Get direct access to HD video tutorials, guided source code repositories, vibe coding prompt templates, and 1-on-1 WhatsApp instructor support.
+                    Get direct access to HD video tutorials, guided source code repositories, vibe coding prompt templates, and 1-on-1 instructor support.
                   </p>
                 </div>
 
@@ -444,12 +444,12 @@ export default async function CourseDetailPage({
                   className="w-full flex items-center justify-center gap-2 px-6 py-4 rounded-full font-semibold text-base transition-all shadow-md hover:shadow-lg group text-center text-white bg-emerald-600 hover:bg-emerald-700"
                 >
                   <MessageCircle className="w-5 h-5 shrink-0" />
-                  <span>Start Course via WhatsApp</span>
+                  <span>Enroll Now</span>
                   <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
                 </a>
 
                 <p className="text-center text-xs text-secondary font-mono">
-                  Direct WhatsApp: <strong className="text-primary font-sans">+252 61 779 1483</strong>
+                  Direct Contact: <strong className="text-primary font-sans">+252 61 429 3433</strong>
                 </p>
 
                 <div className="border-t border-border pt-5 space-y-3">
@@ -663,7 +663,7 @@ export default async function CourseDetailPage({
                 </div>
               </section>
 
-              {/* Video Access & WhatsApp Delivery Notice */}
+              {/* Video Access & Course Delivery Notice */}
               <section className="p-8 md:p-10 bg-gradient-to-br from-emerald-600 to-teal-800 text-white rounded-3xl shadow-lg relative overflow-hidden">
                 <div className="relative z-10 max-w-2xl space-y-4">
                   <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-white/20 text-white text-xs font-mono">
@@ -674,7 +674,7 @@ export default async function CourseDetailPage({
                     Sida Aad U Helayso Casharrada Muuqaalka Ah & Agabka Koorsada
                   </h3>
                   <p className="text-emerald-100 text-sm sm:text-base leading-relaxed">
-                    Dhammaan casharrada koorsada waxaa lagu duubay Af-Soomaali cad oo qotodheer. Marka aad WhatsApp-ka igala soo xiriirto, waxaad si toos ah u heleysaa video modules-ka la habeeyay, starter repositories-ka GitHub, prompt templates-ka Vibe Coding-ka, iyo taageero toos ah oo 1-on-1 ah si koodhkaaga loo cillad-saaro loona hubiyo inaad mashruucaaga si guul leh u dhisto.
+                    Dhammaan casharrada koorsada waxaa lagu duubay Af-Soomaali cad oo qotodheer. Marka aad toos igala soo xiriirto, waxaad si toos ah u heleysaa video modules-ka la habeeyay, starter repositories-ka GitHub, prompt templates-ka Vibe Coding-ka, iyo taageero toos ah oo 1-on-1 ah si koodhkaaga loo cillad-saaro loona hubiyo inaad mashruucaaga si guul leh u dhisto.
                   </p>
                   <div className="pt-2">
                     <a
@@ -684,7 +684,7 @@ export default async function CourseDetailPage({
                       className="inline-flex items-center gap-2 px-7 py-3.5 bg-white text-emerald-800 font-bold rounded-full hover:bg-emerald-50 transition-colors shadow-md text-sm sm:text-base"
                     >
                       <MessageCircle className="w-5 h-5 text-emerald-600" />
-                      Ka Hel Casharrada WhatsApp (+252 61 779 1483)
+                      Ka Hel Casharrada Toos (+252 61 429 3433)
                     </a>
                   </div>
                 </div>
@@ -743,7 +743,7 @@ export default async function CourseDetailPage({
                 </ul>
               </div>
 
-              {/* WhatsApp Quick Card */}
+              {/* Quick Contact Card */}
               <div className="p-6 bg-emerald-500/10 border border-emerald-500/20 rounded-3xl space-y-4 text-center">
                 <div className="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-700 flex items-center justify-center mx-auto">
                   <MessageCircle className="w-6 h-6" />
@@ -760,7 +760,7 @@ export default async function CourseDetailPage({
                   rel="noopener noreferrer"
                   className="block w-full py-3 px-4 bg-emerald-600 hover:bg-emerald-700 text-white rounded-full font-medium text-xs sm:text-sm transition-colors shadow-sm"
                 >
-                  Message on WhatsApp
+                  Message Instructor
                 </a>
               </div>
             </div>

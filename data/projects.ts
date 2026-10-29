@@ -94,7 +94,7 @@ export const projects: Project[] = [
       "Curated optical catalog with pricing, customer ratings, and high-resolution frame previews",
       "Filtering by Men, Women, Kids, Sunglasses, and Premium Frames",
       "Clinical eye services showcase with consultation bookings",
-      "Direct WhatsApp and phone integration for rapid customer orders",
+      "Direct customer order and consultation inquiry integration for rapid service",
       "Responsive, fluid animations built with Tailwind CSS and Framer Motion",
     ],
     outcomes: [
